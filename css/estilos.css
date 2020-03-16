@@ -1,0 +1,66 @@
+/***Globales**/
+.contenedor{
+    width: 98%;
+    margin: 0 auto;
+}
+.seccion{
+    padding: 30px 0;
+  }
+  .seccion p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  h2 {
+    font-family: sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h2::after{
+    content: '';
+    margin: 0 auto;
+    height: 30px;
+    width: 100px;
+    display: block;
+  }  
+/**Header**/
+.sitio-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+.sitio-header.inicio{
+    max-width: 100%;
+    background-image: url(../img/Header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 35rem; /**No se va distorsionar la imagen en pantallas pequeñas**/
+}
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-header h1{
+    color: aliceblue;
+    scroll-padding-bottom: 3rem;
+    max-width: 60rem;
+    line-height: 2;
+    font-size: 6rem;
+}
+/**Nav**/
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
+.navegacion a:hover{
+    color: goldenrod;
+    background-color: #042572;
+}
+
