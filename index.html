@@ -1,37 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Proyecto</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="/css/estilos.css">
-</head>
-<body>
-    <header class="sitio-header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-               <!--Aqui ira el logo img<>-->
-                </a>
-                <nav id="navegacion" class="navegacion">
-                    <a href="">Nosotros</a>
-                    <a href="">Anuncios</a>
-                    <a href="">Actividades</a>
-                    <a href="">Instalaciones</a>
-                    <a href="">Contacto</a>
+<html lang="es">
+    <head>
+        <title>GYM Acatlán</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale= 1">
+        <link href="css\style.css" rel ="stylesheet">
+        <link  rel="icon"   href="img/favicon.png"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <link rel="stylesheet" href="/css/all.min.css">
 
-                </nav>
+    </head>
+    <body>
+        <header class="header">
+             <div class ="container logo-nav-container">
+               <a href="index.html"><img class="logo" src="img/LOGO1.png"></a>
+                <span class="menu-icon">Menu</span>
+                <nav class="navigation">                     
+                    <ul>
+                    <li><a href = "convocatorias.html">  Convocatorias</a></li>
+                   <li><a href = "sn.html">   Cita Nutriólogo</a></li>                        
+                <!--    <li><a href = "#">   Tienda </a></li> --> 
+                    <li><a href = "inscripcion.html">   Inscripción GYM</a></li>
+                    
+                    </ul>          
+                </nav>           
             </div>
-            <h1>Gimnasio Fes Acatlán</h1>
-        </div>
-    </header>
-    <section class =" seccion contenedor">
-        <div class="Primera">
-        <h2>Nuestras Actividades</h2>
-        <p>Cras congue nunc quis libero luctus tristique. Duis consequat risus vel fermentum varius. Suspendisse pellentesque feugiat ligula, vel viverra nibh hendrerit sit amet. Nullam sagittis risus eget ligula fringilla vulputate. Pellentesque ultricies odio vel turpis varius tincidunt. Etiam aliquam neque id faucibus volutpat. Ut fringilla magna in vestibulum sodales. Vestibulum augue ligula, tristique sit amet mattis ut, malesuada quis nibh</p>
+        </header>
+
+
+
+        <main>
+            <section class="servicios">
+                <div class="contenedor">
+                    <h2 class="titulo">Nuestras Instalaciones</h2>
+                    <div class="servicio-cont">
+                        <div class="servicio-ind">
+                            <img src="img/j.jpg">
+                            <h3>Cancha interior </h3>
+                            <p>Lunes a viernes de 9:00 a 17:00 horas. </p>
+
+
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img/q.jpg">
+                            <h3>Spinning Center</h3>
+                            <p>Lunes a viernes de 9:00 a 17:00 horas. </p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img/s.jpg">
+                            <h3>Duchas y Vestidores</h3>
+                            <p>Lunes a viernes de 9:00 a 17:00 horas. </p>                                          
+
+                        </div>
+                    
+                    </div>
+                 </div>
+            </section>               
+            <section class="servicios2">
+                <div class="contenedor2">                    
+                    <div class="servicio2-cont2">
+                        <div class="servicio2-ind2">
+                            <img src="img/g.jpg">
+                            <h3>Box</h3>
+                            <p>Lunes a viernes de 11:00 a 15:00 horas. </p>
+
+
+                        </div>
+                        <div class="servicio2-ind2">
+                            <img src="img/t.jpg">
+                            <h3>Tennis de mesa</h3>
+                            <p> Lunes a viernes de 9:00 a 15:00 horas </p>
+                        </div>
+                        <div class="servicio2-ind2">
+                            <img src="img/u.jpg">
+                            <h3>TAE KWON DO </h3>
+                            <p>Lunes a viernes de 12:00 a 17:00 horas.. </p>                                                 
+
+                        </div>
+                    
+                    </div>
+                 </div>
+            </section> 
+        </main>
+</section>
+
+<!--Otra sección-->
+<div class="newsletter">
+    <div class="contenido contenedor">
+      <h3>Gym Acatlán</h3>
+      <a href="inscripcion.html" class="button transparente">Registro</a>
+    </div> <!--Contenido-->
+  </div><!--newsletter-->
+  
+
+ <!-- Testimonios -->
+ <section class="seccion">
+    <h2>Testimonios</h2>
+    <div class="testimoniales contenedor clearfix">
+    <div class="testimonial">
+        <blockquote>
+           
+            <p>"Los entrenadores son amables y están muy preparados, y me quedé impresionado de que no me bombardearan inmediatamente con los típicos argumentos de ventas. La música está a un volumen adecuado, la decoración es agradable y funcional, y la gente que viene aquí quiere sencillamente hacer ejercicio, eso es todo."</p>
+    
+            <footer class="info-testimonial clearfix">
+              <img src="img/h.jpg" alt="imagen testimonial">
+              <cite>Leonardo Saldivar<span>Atletismo</span></cite>
+            </footer>
+        </blockquote>
+    </div> <!--Testimonial-->
+
+    <div class="testimonial">
+      <blockquote>
+        <p>"Mi meta principal era bajar de peso y medidas y también mejorar mi condición física y, como consecuencia, mejorar mi salud e incluso mi estado mental. Creo que no había nada que me impidiera lograr esto, solo que no había encontrado la ayuda adecuada, hasta que ingresé al Gym de Acatlán. Era exactamente lo que estaba buscando."</p>
+          <footer class="info-testimonial clearfix">
+            <img src="img/o.jpg" alt="imagen testimonial">
+            <cite>Diana Hernández<span>Gimnasia</span></cite>
+          </footer>
+      </blockquote>
+  </div> <!--Testimonial-->
+
+  <div class="testimonial">
+    <blockquote>
+        <p>Me gusta el hecho de que al Gym de Acatlán viene gente de todas las edades a hacer ejercicio. Yo tengo cuarenta y tantos, y a veces la gente me miraba raro en otros gimnasios, o me sentía un poco fuera de lugar cuando todo el mundo era mucho más joven que yo</p>
+        <footer class="info-testimonial clearfix">
+          <img src="img/p.jpg" alt="imagen testimonial">
+          <cite>Andrea Escamilla <span>Gimnasio</span></cite>
+        </footer>
+    </blockquote>
+</div> 
+</div>
+  </section>
+
+  <section class="graph">
+  <div class=" count ">
+  <h1>Ingresa a ver los niveles de satisfacción</h1>  
+  <p>Graficos</p>
+  <a href="graphics.html" onclick="javascript:alert('Ingresando a las graficas');" class="button transparente" >Ver</a>  
+</div>
+</section>
+
+  <!--Mapa-->
+  <div id="mapa" class="mapa"></div>
+
+  <footer class="site-footer">
+    <div class="contenedor clearfix">
+      <div class="footer-informacion">
+            <h3>Sobre <span>Gym Acatlan</span></h3>
+            <p>Este es  un proyecto de un Gimnasio de la Universidad Nacional Autonoma de México, Facultad de Estudios Superiores Acatlan. Realizado por el equipo integrado por Alexander Ordoñez Guido, Saúl Zúñiga Pérez</p>
+      </div>
+      <div class="ultimos-tweets">
+        <h3>Últimos<span> logros</span></h3>
+        <ul>
+          <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+          <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+          <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <h3>Redes<span>Sociales</span></h3>
+        <nav class="redes-sociales">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </nav>
+      </div>
     </div>
-    </section>
-</body>
+  
+    <p class="copyright">
+      Todos los derechos Reservados Alexander Ordoñez & Saúl Zúñiga 2020.
+    </p>
+  </footer>
+
+
+
+
+  
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
 </html>

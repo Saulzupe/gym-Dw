@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>GYM Acatlán</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale= 1">
+        <link href="css\style.css" rel ="stylesheet">
+        <link  rel="icon"   href="img/favicon.png"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <link rel="stylesheet" href="/css/all.min.css">
+        <link rel="stylesheet" href="c3-0.7.15/c3.min.css">
+        <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+
+
+    </head>
+    <body>
+        <header class="header">
+             <div class ="container logo-nav-container">
+               <a href="index.html"><img class="logo" src="img/LOGO1.png"></a>
+                <span class="menu-icon">Menu</span>
+                <nav class="navigation">                     
+                    <ul>
+                    <li><a href = "convocatorias.html">  Convocatorias</a></li>
+                   <li><a href = "sn.html">   Cita Nutriólogo</a></li>                        
+                <!--    <li><a href = "#">   Tienda </a></li> --> 
+                    <li><a href = "inscripcion.html">   Inscripción GYM</a></li>
+                    
+                    </ul>          
+                </nav>           
+            </div>
+        </header>
+
+ <!--Graficos con 3D.js-->
+
+
+     <div id="c-pick"></div>
+
+
+
+<section class="contenedor">
+
+    <div id="chart"></div>
+
+</section>
+
+<script>
+    var data1 = {
+     x: [1, 2, 3, 4],
+     y: [1, 2, 3, 4],
+     type: 'lines',
+     name:'Datos 1',
+     line:{ width: 5, color:'blue',dash:'solid'},
+     marker:{ size: 10, color:'green'}
+   };
+   
+   var data = [data1];
+   
+   Plotly.newPlot('chart', data,{title:'Satisfaccion de clientes'});
+</script>
+
+
+  <footer class="site-footer">
+    <div class="contenedor clearfix">
+      <div class="footer-informacion">
+            <h3>Sobre <span>Gym Acatlan</span></h3>
+            <p>Este es  un proyecto de un Gimnasio de la Universidad Nacional Autonoma de México, Facultad de Estudios Superiores Acatlan. Realizado por el equipo integrado por Alexander Ordoñez Guido, Saúl Zúñiga Pérez</p>
+      </div>
+      <div class="ultimos-tweets">
+        <h3>Últimos<span> logros</span></h3>
+        <ul>
+          <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+          <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+          <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <h3>Redes<span>Sociales</span></h3>
+        <nav class="redes-sociales">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </nav>
+      </div>
+    </div>
+  
+    <p class="copyright">
+      Todos los derechos Reservados Alexander Ordoñez & Saúl Zúñiga 2020.
+    </p>
+  </footer>
+
+
+
+
+  
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+        <script src="js/main.js"></script>
+        <script  src="./d3/d3.min.js"></script>
+        <script src="c3-0.7.15/c3.min.js"></script>
+        <script src="js/app.js"></script>
+        
+
+       
+    </body>
+
+</html>

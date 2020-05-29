@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>GYM | Cita Nutriólogo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale= 1">
+        <link href="css\style.css" rel ="stylesheet">
+        <link  rel="icon"   href="img/favicon.png"/>
+        
+
+
+
+
+        <script type="text/javascript">
+			function revisar(elemento){
+				if(elemento.value==''){
+					elemento.className='error';
+				}else{
+					elemento.className='input';
+				}
+			}
+			
+			function revisaNumero(elemento){
+				if(elemento.value!==''){
+					var data = elemento.value;
+					if(isNaN(data)){
+						elemento.className='error';
+					}else{
+						elemento.className='input';
+					}
+				}
+			}
+			
+			function revisaLongitud(elemento, min){
+				if(elemento.value!==''){ 
+					var data = elemento.value;
+					if(data.length<min){
+						elemento.className='error';
+					}else{
+						elemento.className='input';
+					}
+				}
+			}
+			
+			function revisarEmail(elemento){
+				if(elemento.value!==''){
+					var data = elemento.value;
+					var exp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+					if(!exp.test(data)){
+						elemento.className='error';
+					}else{
+						elemento.className='input';
+					}	
+				}
+			}
+			
+			function validar(){
+				var datosCorrectos=true;
+				var error="";
+				if(document.getElementById("nombre").value==""){
+					datosCorrectos=false;
+					error="\n El Nombre Esta Vacio";
+				}
+				
+				if(document.getElementById("telefono").value==""){
+					datosCorrectos=false;
+					error="\n Debes Poner Un Tenelefono";
+				}
+				
+				if(isNaN(document.getElementById("telefono").value)){
+					datosCorrectos=false;
+					error="\n El Telefono Solo Debe Tener Numeros";
+				}
+				
+				var exp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				if(!exp.test(document.getElementById("email").value)){
+					datosCorrectos=false;
+					error="\n Email Invalido";
+				}
+				
+				if(document.getElementById("mensaje").value.length<30){
+					datosCorrectos=false;
+					error="\n El Mensaje Debe Ser Mayor A 30 Caracteres";
+				}
+				
+				if(!datosCorrectos){
+					alert('Hay Errores En El formulario'+error);
+				}
+				
+				return datosCorrectos;
+				
+			}
+			
+			
+		</script>
+
+    </head>
+    <body>
+        <header class="Sheader">
+             <div class ="container logo-nav-container">
+               <a href="index.html"><img class="logo" src="img/LOGO2.png"></a>
+                <span class="menu-icon">Menu</span>
+                <nav class="navigation">                     
+                    <ul>
+                    <li><a href = "convocatorias.html">  Convocatorias</a></li>
+                   <li><a href = "sn.html">  Cita Nutriólogo</a></li>                        
+                <!--    <li><a href = "#">   Tienda </a></li> --> 
+                    <li><a href = "inscripcion.html">   Inscripción GYM</a></li>
+                    
+                    </ul>          
+                </nav>           
+                
+            </div>
+           
+        </header>
+        
+        <div id="contenedor-form">
+            <h2 class="titulo2">Programa una cita con el Nutriólogo<br> Es gratis</h2>
+			<form action="exitosn.html" method="exitosn.html" onsubmit="return validar(exitosn.html)">
+				<p class="nombre">
+					<input type="text" class="input" placeholder="Nombre" id="nombre" name="nombre" onblur="revisar(this)" onkeyup="revisar(this)" autocomplete="off" required>
+				</p>
+				
+				<p class="email">
+					<input type="text" class="input" placeholder="Email*" id="email" name="email" onblur="revisar(this); revisarEmail(this)" onkeyup="revisar(this); revisarEmail(this)" autocomplete="off" required>
+				</p>
+				
+				<p class="telefono">
+					<input type="text" class="input" placeholder="Telefono*" id="telefono" name="telefono" onblur="revisar(this); revisaNumero(this)" onkeyup="revisar(this); revisaNumero(this)" autocomplete="off" required>
+				</p>
+				
+				<p class="mensaje">
+					<textarea class="input" id="mensaje" placeholder="Mensaje" name="mensaje" onblur="revisar(this); revisaLongitud(this, 30)" onkeyup="revisar(this); revisaLongitud(this, 30)" autocomplete="off" required></textarea>
+				</p>
+				
+				<div class="enviar">
+					<input type="submit" value="ENVIAR" id="enviar"/>
+					<div class="transicion"></div>
+				</div>
+			</form>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer class="site-footer">
+			<div class="contenedor clearfix">
+			  <div class="footer-informacion">
+					<h3>Sobre <span>Gym Acatlan</span></h3>
+					<p>Este es  un proyecto de un Gimnasio de la Universidad Nacional Autonoma de México, Facultad de Estudios Superiores Acatlan. Realizado por el equipo integrado por Alexander Ordoñez Guido, Saúl Zúñiga Pérez</p>
+			  </div>
+			  <div class="ultimos-tweets">
+				<h3>Últimos<span> logros</span></h3>
+				<ul>
+				  <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+				  <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+				  <li>Phasellus posuere accumsan pharetra. Curabitur in nisi laoreet arcu pulvinar ornare at et felis. Donec et sem eu est aliquam hendrerit. Nullam pretium quam ac nisi rutrum fermentum.</li>
+				</ul>
+			  </div>
+			  <div class="menu">
+				<h3>Redes<span>Sociales</span></h3>
+				<nav class="redes-sociales">
+				  <a href="#"><i class="fab fa-facebook"></i></a>
+				  <a href="#"><i class="fab fa-twitter"></i></a>
+				  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+				  <a href="#"><i class="fab fa-youtube"></i></a>
+				  <a href="#"><i class="fab fa-instagram"></i></a>
+				</nav>
+			  </div>
+			</div>
+		  
+			<p class="copyright">
+			  Todos los derechos Reservados Alexander Ordoñez & Saúl Zúñiga 2020.
+			</p>
+		  </footer>
+</body>
+
+
+
+</html>

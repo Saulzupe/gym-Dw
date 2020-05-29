@@ -1,0 +1,18 @@
+---------------------------------------------------------
+
+Carpeta al proyecto:
+
+https://drive.google.com/drive/folders/1sCumxm_dvQ0CoiBbdiPvxWwlUfHNIAaH?usp=sharing
+---------------------------------------------------------
+
+NOTA: profesor buen día no me dejo subir la carpeta
+directo a la página ya que el sitio arrebasa los 5MB
+esperó no haga ni un inconveniente, también le anexe 
+el link al sitio montado a un servidor gratuito.
+
+---------------------------------------------------------
+
+
+Página montada a un servidor gratuito
+
+https://unam-gym-acatlan.netlify.app/
